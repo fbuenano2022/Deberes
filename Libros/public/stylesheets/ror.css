@@ -1,0 +1,86 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#Seccion1
+{
+    display: grid;
+    grid-template-areas: 
+    "Title Title"
+    "Img1 Descrip";
+    grid-area: Info;
+}
+#Title
+{
+    grid-area: Title;
+}
+#imgContainer img
+{
+    height: 19rem;
+    width: 14rem;
+    padding: 1rem 1rem 1rem 1rem ;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+#divInfo
+{
+    padding-left: 1rem;
+}
+main
+{
+    display: grid;
+    grid-template-areas: 
+    "Info imagenes";
+}
+#divLibros
+{
+    grid-area: imagenes;
+    display:grid;    
+    grid-template-areas: 
+    "Separador images";
+}
+#divColor
+{
+    grid-area: Separador;
+}
+#divImgContainer
+{ 
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-area: images;
+}
+#divImgContainer img
+{
+    height: 6rem;
+    width: 5rem;
+}
+#divColor
+{
+    background-color: red;;
+}
+#divInfo
+{
+    display: grid;
+    padding-right: 1rem;;
+}
+#pub
+{
+    text-align: right;
+}

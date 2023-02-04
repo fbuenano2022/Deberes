@@ -1,0 +1,117 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* El elemento header tendrá una imagen de fondo */
+ul
+{
+    list-style: none;
+}
+header {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    padding-top: 8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-areas: 
+    "Libros Libros"
+    "Descripcion Imagenes";
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    column-gap: 2em;
+}
+#secLibros
+{
+    grid-area: Libros;
+}
+#secDescripcion
+{
+    grid-area: Descripcion;
+}
+#secImagenes
+{
+    grid-area: Imagenes;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    flex-direction: row;    
+}
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+p
+{
+    text-align: justify;
+}
+main
+{
+    display: grid;
+    grid-template-areas: 
+    "Web"
+    "Imagenes2";
+    align-items: center;
+}
+#secWeb
+{
+    grid-area: Web;
+}
+#secImagenes2
+{
+    grid-area: Imagenes2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    flex-direction: row;    
+}
+img
+{
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+#secImagenes img
+{
+    height: 90px;
+    width: 70px;
+}
+#secImagenes2 img
+{
+    height: 200px;
+    width: 170px;
+}
+
+header
+{
+    background-color: white !important;
+}
+nav
+{
+    background-color: white !important;
+}
+main
+{
+    background-color: white !important;
+}
